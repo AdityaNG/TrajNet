@@ -1,0 +1,25 @@
+version: "3.9"
+services:
+  dev:
+    # Will build ./docker/Dockerfile
+    # This Dockerfile is for GPU based development
+
+    build:
+      context: .
+      dockerfile: ./docker/Dockerfile
+    volumes:
+      - ./:/workspace
+      - ~/.cache:/root/.cache
+      - ~/.torch:/root/.torch
+      - ~/.config:/root/.config
+      - ~/.bash_history:/root/.bash_history
+      - ~/.netrc:/root/.netrc
+      - ~/Datasets:/root/Datasets
+      - /home/shared:/home/shared
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              device_ids: ['0']
+              capabilities: [gpu]

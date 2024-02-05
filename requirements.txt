@@ -1,0 +1,29 @@
+# pip install --pre --index-url https://download.pytorch.org/whl/nightly/cu118 -r requirements.txt
+
+# torch==2.1.0.dev20230714+cu118
+# torchvision==0.16.0.dev20230714+cu118
+# torchaudio==2.1.0.dev20230713+cu118
+numpy==1.22.0
+tqdm
+wandb
+opencv-python-headless
+pandas
+matplotlib==3.6.2
+timm==0.6.12
+scipy==1.9.3
+onnx==1.14.0
+onnxruntime-gpu==1.14.0
+termcolor==2.3.0
+einops==0.6.1
+torch-scatter==2.1.1
+lpips==0.1.4
+scikit-image==0.21.0
+pyquaternion==0.9.9
+scikit-learn==1.3.0
+fastdtw==0.3.4
+monodepth2==1.0.0
+manydepth @ git+https://github.com/PW22-SBN-01/manydepth@pip-module
+open3d==0.17.0
+moviepy==1.0.3
+imageio==2.31.2
+imageio-ffmpeg==0.4.8

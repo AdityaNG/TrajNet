@@ -1,0 +1,75 @@
+{
+    "method": "grid",
+    "metric": {
+      "goal": "minimize",
+      "name": "train_loss"
+    },
+    "parameters": {
+      "amp": {
+        "values": [
+          false
+        ]
+      },
+      "epochs": {
+        "values": [
+          15
+        ]
+      },
+      "batch_size": {
+        "values": [
+          60
+        ]
+      },
+      "val_percent": {
+        "values": [
+          0.005
+        ]
+      },
+      "weight_decay": {
+        "values": [
+          0
+        ]
+      },
+      "learning_rate": {
+        "values": [
+            0.00001
+        ]
+      },
+      "save_checkpoint": {
+        "values": [
+          true
+        ]
+      },
+      "trajectory_mode": {
+        "values": [
+          "regress"
+        ]
+      },
+      "patchwise_percentage": {
+        "values": [
+          1.0
+        ]
+      },
+      "dataset_percentage": {
+        "values": [
+          1.0
+        ]
+      },
+      "load": {
+        "values": [
+          "checkpoints_pretrained/TrajDPT_V3_dpt_swin2_tiny_256_rgb_regress/xi7q32ka/checkpoint_epoch_15.pth",
+          false
+        ]
+      },
+      "max_warp_y": {
+        "values": [
+          0.1
+        ]
+      },
+      "random_flip": {
+        "values": [
+          true
+        ]
+      }
+    }
+  }
