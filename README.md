@@ -21,6 +21,23 @@ To run the interactive shell, use:
 docker compose run dev
 ```
 
+# Citation
+
+Cite our work if you found it useful!
+```
+@INPROCEEDINGS{10611311,
+  author={NG, Aditya and PB, Dhruval and Shalabi, Jehan and Jape, Shubhankar and Wang, Xueji and Jacob, Zubin},
+  booktitle={2024 IEEE International Conference on Robotics and Automation (ICRA)}, 
+  title={Thermal Voyager: A Comparative Study of RGB and Thermal Cameras for Night-Time Autonomous Navigation}, 
+  year={2024},
+  volume={},
+  number={},
+  pages={14116-14122},
+  keywords={Navigation;Lighting;Thermal sensors;Cameras;Distance measurement;Trajectory;Reliability},
+  doi={10.1109/ICRA57147.2024.10611311}
+}
+```
+
 ## Demo
 
 ## Train
